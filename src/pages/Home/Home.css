@@ -33,10 +33,14 @@
 .hero-logo {
   width: 300px;
   height: auto;
+  min-height: 300px;
   z-index: 5;
   animation: fadeInDown 1.2s ease;
   margin-bottom: -40px;
+  display: block;
+  opacity: 0;
 }
+
 
 .slogan {
   font-size: 2rem;        
