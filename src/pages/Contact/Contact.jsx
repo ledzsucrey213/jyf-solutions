@@ -3,6 +3,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import "./Contact.css";
 import whatsappIcon from "../../assets/icons/whatsapp.png";
 import mailIcon from "../../assets/icons/mail.png";
+import instagramIcon from "../../assets/icons/instagram.png";
 
 const Contact = () => {
   const { language } = useLanguage();
@@ -23,6 +24,7 @@ const Contact = () => {
       submit: "ENVOYER",
       whatsapp: "WHATSAPP",
       emailTitle: "EMAIL",
+      instaTitle: "INSTAGRAM",
       success: "Message envoyé avec succès !",
       error: "Une erreur est survenue.",
     },
@@ -41,6 +43,7 @@ const Contact = () => {
       submit: "SUBMIT",
       whatsapp: "WHATSAPP",
       emailTitle: "EMAIL",
+      instaTitle: "INSTAGRAM",
       success: "Message sent successfully!",
       error: "An error occurred.",
     },
@@ -169,8 +172,23 @@ const Contact = () => {
         <div className="info-block2">
           <h3>{t.emailTitle}</h3>
           <li>
-            <img src={mailIcon} alt="email" />
-            <span>yanis.baroudi36@gmail.com</span>
+            <a href="mailto:jyf.contact@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={mailIcon} alt="email" />
+            </a>
+            <a href="mailto:jyf.contact@gmail.com" target="_blank" rel="noopener noreferrer" className="instagram-link">
+              <span>jyf.contact@gmail.com</span>
+            </a>
+          </li>
+        </div>
+        <div className="info-block3">
+          <h3>{t.instaTitle}</h3>
+          <li>
+            <a href="https://www.instagram.com/jyf.solutions" target="_blank" rel="noopener noreferrer">
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+            <a href="https://www.instagram.com/jyf.solutions" target="_blank" rel="noopener noreferrer" className="instagram-link">
+              <span>jyf.solutions</span>
+            </a>
           </li>
         </div>
       </div>
