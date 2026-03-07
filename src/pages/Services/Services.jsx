@@ -43,7 +43,9 @@ const Services = () => {
           <p className="price-note" dangerouslySetInnerHTML={{ __html: content[language].service1Price }} />
         </div>
         <div className="service-image service-image-burger">
-          <img src={restaurant} alt="Website Example" />
+          <a href="https://jy-dev-italy.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <img src={restaurant} alt="Website Example" />
+          </a>
         </div>
       </section>
 
@@ -54,7 +56,7 @@ const Services = () => {
           <p className="price-note" dangerouslySetInnerHTML={{ __html: content[language].service2Price }} />
         </div>
         <div className="service-image service-image-outfy">
-          <img src={applicationImage} alt="Mobile App Example" style={{ width: '250px', height: 'auto', objectFit: 'contain' }}/>
+          <img src={applicationImage} alt="Mobile App Example" style={{ width: '250px', height: 'auto', objectFit: 'contain' }} />
         </div>
       </section>
     </div>
