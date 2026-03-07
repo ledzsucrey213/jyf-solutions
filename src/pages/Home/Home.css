@@ -33,13 +33,19 @@
 .hero-logo {
   width: 300px;
   height: auto;
-  min-height: 300px;
+  min-height: 100px; 
   z-index: 5;
-  animation: fadeInDown 1.2s ease;
+  animation: fadeInDown 1.2s ease forwards; 
   margin-bottom: -40px;
   display: block;
-  opacity: 0;
+  opacity: 0; 
 }
+
+.hero-logo.loaded {
+  opacity: 1; /* 👈 Affiche le logo une fois chargé */
+}
+
+
 
 
 .slogan {

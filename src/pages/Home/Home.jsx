@@ -20,12 +20,15 @@ const Home = () => {
   };
   const t = labels[language];
 
-  // 👇 Ne pas afficher le logo tant qu'il n'est pas chargé
   return (
     <>
       <div className="hero-section">
         <div className="hero-content">
-          {isLogoLoaded && <img src={logo} alt="JY Dev Logo" className="hero-logo" />}
+          <img
+            src={logo}
+            alt="JY Dev Logo"
+            className={`hero-logo ${isLogoLoaded ? "loaded" : ""}`}
+          />
           <h1 className="slogan">{t.slogan}</h1>
         </div>
         <div className="blob blob1" />
