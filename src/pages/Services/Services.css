@@ -153,6 +153,10 @@
     width: 200px; /* légèrement plus petit sur mobile */
   }
 
+  .service-image-plat img {
+  max-width: 150px;
+}
+
 
 
 
