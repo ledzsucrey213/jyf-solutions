@@ -18,6 +18,10 @@ const Services = () => {
       service2Description:
         "De la conception au lancement, nous créons des applications mobiles élégantes et évolutives pour iOS et Android. Nos applications sont conçues pour offrir une expérience utilisateur fluide, des performances robustes et des résultats réels pour les startups et les entreprises en croissance.",
       service2Price: "Applications mobiles à partir de <strong>1500€</strong>",
+      service3Title: "Modélisation <span className='highlight'>3D réaliste</span> de plats",
+      service3Description:
+        "Nous réalisons des modélisations 3D de plats ultra réalistes pour sublimer votre communication visuelle. Offrez à vos clients un aperçu fidèle et attractif des plats proposés sur votre carte, idéal pour les restaurants, dark kitchens ou marques alimentaires. Nos rendus permettent de valoriser chaque détail, d’attirer l’attention et d’augmenter l’envie de commander, sans avoir recours à un shooting photo traditionnel.",
+      service3Price: "Modélisation 3D sur devis personnalisé",
     },
     en: {
       title: "Our Services",
@@ -29,6 +33,10 @@ const Services = () => {
       service2Description:
         "From concept to launch, we craft sleek and scalable mobile apps for both iOS and Android. Our applications are designed to deliver a smooth user experience, robust performance, and real business results—perfect for startups and growing companies.",
       service2Price: "Mobile apps available from <strong>€1500</strong>",
+      service3Title: "Realistic <span className='highlight'>3D Food Modeling</span>",
+      service3Description:
+        "We create ultra-realistic 3D food models to enhance your visual communication. Give your customers a clear and appealing preview of the dishes on your menu—perfect for restaurants, dark kitchens, and food brands. Our renders highlight every detail, capture attention, and increase the desire to order, without the need for traditional photoshoots.",
+      service3Price: "3D modeling available with custom pricing",
     },
   };
 
@@ -57,6 +65,17 @@ const Services = () => {
         </div>
         <div className="service-image service-image-outfy">
           <img src={applicationImage} alt="Mobile App Example" style={{ width: '250px', height: 'auto', objectFit: 'contain' }} />
+        </div>
+      </section>
+
+      <section className="service-block" style={{ marginBottom: '100px' }}>
+        <div className="service-content">
+          <h2 dangerouslySetInnerHTML={{ __html: content[language].service3Title }} />
+          <p>{content[language].service3Description}</p>
+          <p className="price-note" dangerouslySetInnerHTML={{ __html: content[language].service3Price }} />
+        </div>
+        <div className="service-image service-image-burger">
+          <img src={restaurant} alt="Website Example" />
         </div>
       </section>
     </div>
