@@ -154,7 +154,15 @@
   }
 
   .service-image-plat img {
-  max-width: 100px;
+  max-width: 130px;
+}
+
+.service-image2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 
