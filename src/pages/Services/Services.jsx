@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import "./Services.css";
 import restaurant from "../../assets/images/restaurant-website.png";
-import ra_image from "../../assets/images/RA.png";
+import ra_image from "../../assets/images/ra.png";
 import model3D from "../../assets/images/model-plat.png";
 import applicationImage from "../../assets/images/outfy.png";
 
