@@ -2,8 +2,8 @@ import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import "./Services.css";
 import restaurant from "../../assets/images/restaurant-website.png";
-import ra_image from "../../assets/images/ra.png";
-import model3D from "../../assets/images/model-plat.png";
+import raexemple from "../../assets/images/ra-exemple.png";
+import model from "../../assets/images/modelpizza.png";
 import applicationImage from "../../assets/images/outfy.png";
 
 const Services = () => {
@@ -77,7 +77,7 @@ const Services = () => {
           <p className="price-note" dangerouslySetInnerHTML={{ __html: content[language].service3Price }} />
         </div>
         <div className="service-image2 service-image-plat">
-          <img src={ra_image} alt="Website Example" />
+          <img src={raexemple} alt="Website Example" />
           <div className="arrow-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 24 24" fill="none">
               <path
@@ -96,7 +96,7 @@ const Services = () => {
               />
             </svg>
           </div>
-          <img src={model3D} alt="Website Example" />
+          <img src={model} alt="Website Example" />
         </div>
       </section>
     </div>
