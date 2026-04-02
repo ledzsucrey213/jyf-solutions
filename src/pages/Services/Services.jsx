@@ -2,6 +2,8 @@ import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import "./Services.css";
 import restaurant from "../../assets/images/restaurant-website.png";
+import ra_image from "../../assets/images/RA.png";
+import model3D from "../../assets/images/model-plat.png";
 import applicationImage from "../../assets/images/outfy.png";
 
 const Services = () => {
@@ -74,8 +76,27 @@ const Services = () => {
           <p>{content[language].service3Description}</p>
           <p className="price-note" dangerouslySetInnerHTML={{ __html: content[language].service3Price }} />
         </div>
-        <div className="service-image service-image-burger">
-          <img src={restaurant} alt="Website Example" />
+        <div className="service-image2 service-image-plat">
+          <img src={ra_image} alt="Website Example" />
+          <div className="arrow-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M13 5L21 12M21 12L13 19M21 12H3"
+                stroke="#AD61FF"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M13 5L21 12M21 12L13 19M21 12H3"
+                stroke="rgba(173, 97, 255, 0.3)"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <img src={model3D} alt="Website Example" />
         </div>
       </section>
     </div>

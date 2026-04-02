@@ -64,10 +64,26 @@
   align-items: center;
 }
 
+.service-image2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
 /* Image Burger */
 .service-image-burger img {
   width: 100%;
   max-width: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.service-image-plat img {
+  width: 100%;
+  max-width: 200px;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -136,4 +152,25 @@
   .service-image-outfy img {
     width: 200px; /* légèrement plus petit sur mobile */
   }
+}
+
+
+.arrow-right {
+  position: absolute;
+  top: 78%;
+  left: 74.5%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Assurez-vous qu'elle est au-dessus des images */
+  pointer-events: none;
+}
+
+/* Animation subtile (optionnelle) */
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.arrow-right svg {
+  animation: pulse 2s infinite ease-in-out;
 }
