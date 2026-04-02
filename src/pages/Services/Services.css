@@ -152,6 +152,24 @@
   .service-image-outfy img {
     width: 200px; /* légèrement plus petit sur mobile */
   }
+
+  .service-image-plat img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.service-image2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+
 }
 
 
