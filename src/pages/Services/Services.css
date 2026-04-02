@@ -69,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
+  gap: 2rem;
 }
 
 /* Image Burger */
@@ -153,37 +153,14 @@
     width: 200px; /* légèrement plus petit sur mobile */
   }
 
-  .service-image-plat img {
-  width: 100%;
-  max-width: 150px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
 
-.service-image2 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
 
-.arrow-right {
-  top: 90%;
-  left: 60%;
-}
 
 
 }
 
 
 .arrow-right {
-  position: absolute;
-  top: 78%;
-  left: 74.5%;
-  transform: translate(-50%, -50%);
-  z-index: 10; /* Assurez-vous qu'elle est au-dessus des images */
   pointer-events: none;
 }
 
