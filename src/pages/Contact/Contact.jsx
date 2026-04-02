@@ -71,7 +71,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbzowg6P3raeLFGJ3r4yFWEuV_QkijbWi76lO3aukiRnnItgj5Ydmu7BLF3wxiNC8TFwrg/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbwyAJ-wScJOHJVnYm8DwVu6ZjFq9RlUIRpFXIMsHYM5lPjtttcCfk0XgHuu4SbRDYf5tw/exec", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify(formData),
