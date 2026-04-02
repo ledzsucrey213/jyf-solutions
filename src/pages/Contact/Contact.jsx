@@ -20,6 +20,7 @@ const Contact = () => {
       web: "Application Web",
       mobile: "Application Mobile",
       both: "Applications Web & Mobile",
+      model: "Modélisation 3D",
       message: "Parlez-nous de votre projet...",
       submit: "ENVOYER",
       whatsapp: "WHATSAPP",
@@ -38,6 +39,7 @@ const Contact = () => {
       needPlaceholder: "What do you need?",
       web: "Web Application",
       mobile: "Mobile Application",
+      model: "3D Modeling",
       both: "Both Web & Mobile Applications",
       message: "Tell us more...",
       submit: "SUBMIT",
@@ -137,6 +139,7 @@ const Contact = () => {
               <option>{t.web}</option>
               <option>{t.mobile}</option>
               <option>{t.both}</option>
+              <option>{t.model}</option>
             </select>
           </div>
           <textarea
